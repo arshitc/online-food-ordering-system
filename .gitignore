@@ -1,0 +1,11 @@
+node_modules
+dist
+build
+.DS_Store
+.env
+coverage
+client/build
+server/uploads/*
+!server/uploads/food-images
+!server/uploads/restaurant-images
+

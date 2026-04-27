@@ -1,0 +1,19 @@
+{
+  "name": "online-food-ordering-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "University project - MERN based online food ordering system",
+  "scripts": {
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client",
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "dev": "./node_modules/.bin/concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm start --prefix client",
+    "start": "npm start --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vercel": "^50.42.0"
+  }
+}

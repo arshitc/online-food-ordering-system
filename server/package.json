@@ -1,0 +1,32 @@
+{
+  "name": "food-ordering-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon server.js",
+    "start": "node server.js",
+    "test": "./node_modules/.bin/cross-env NODE_ENV=test ./node_modules/.bin/jest --detectOpenHandles --forceExit"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^2.5.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.11.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.10.0",
+    "socket.io": "^4.8.1",
+    "stripe": "^17.6.0"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.3.0",
+    "nodemon": "^3.1.9",
+    "supertest": "^7.2.2"
+  }
+}
